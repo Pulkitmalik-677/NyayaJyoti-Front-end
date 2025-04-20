@@ -48,16 +48,12 @@ Document Type	Colab Notebook Link
 
 🚀 Running the Frontend
 📦 Installation
-bash
-Copy
-Edit
+Person who created is Bilal Sadiq
 git clone https://github.com/bilalsadiq03/nyaya-jyoti.git
 cd nyaya-jyoti
 npm install
 ▶️ Start the App
-bash
-Copy
-Edit
+
 npm run dev
 The app will be available at: http://localhost:3000
 
@@ -68,9 +64,8 @@ Copy the Frontend API key
 
 Create a .env.local file with:
 
-env
-Copy
-Edit
+
+
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_key_here
 🛠️ Technologies Used
 ⚛️ React.js (Next.js)
