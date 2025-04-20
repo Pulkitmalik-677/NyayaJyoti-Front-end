@@ -1,36 +1,108 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+⚖️ Nyaya Jyoti – Frontend (React-based Legal Document Chatbot Platform)
+“Making legal documentation accessible, smart, and fast.”
 
-## Getting Started
+This is the official frontend of the Nyaya Jyoti Project, a chatbot-driven platform that allows users to create legally valid documents like Loan Agreements, Wills, Sale Deeds, Rent Agreements, and Friendly Loan Notices.
 
-First, run the development server:
+Developed as part of the Design Thinking & Innovation course at Bennett University.
 
-```bash
+🌐 Live Project Features
+🧾 Legal Document Generator
+User-friendly chatbot UI to collect document parameters
+
+One-click access to backend notebooks (Google Colab)
+
+Real-time .docx file generation
+
+✍️ Digital Signature Verification (Coming Soon)
+Upload 5 real signature samples during sign-up
+
+System compares signed document input using AI
+
+Notifies user if the signature is Genuine or Forged
+
+👥 User Authentication
+Integrated with Clerk for secure login & onboarding
+
+Plan to store user-specific document history and signatures
+
+📁 Folder Overview
+
+Folder/File	Purpose
+src/	Main React codebase for UI
+components/	Chatbot, Document Cards, Navbar, Footer
+pages/	Individual document generators
+utils/	Helper functions and routing
+public/	Static assets, logos
+tailwind.config.js	Tailwind styling support
+package.json	React project dependencies
+.env.example	Example config for Clerk or backend links
+📄 Supported Legal Documents
+
+Document Type	Colab Notebook Link
+📄 Loan Agreement	Open in Colab
+🧾 Will Document	Coming Soon
+🏠 Sale Deed	Coming Soon
+🏢 Lease Agreement	Coming Soon
+💵 Friendly Loan Notice	Coming Soon
+(All notebooks include clause generation, parameter filling, and .docx download)
+
+🚀 Running the Frontend
+📦 Installation
+bash
+Copy
+Edit
+git clone https://github.com/bilalsadiq03/nyaya-jyoti.git
+cd nyaya-jyoti
+npm install
+▶️ Start the App
+bash
+Copy
+Edit
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The app will be available at: http://localhost:3000
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🔐 Clerk Integration (Optional)
+Sign up at https://clerk.dev
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Copy the Frontend API key
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Create a .env.local file with:
 
-## Learn More
+env
+Copy
+Edit
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_key_here
+🛠️ Technologies Used
+⚛️ React.js (Next.js)
 
-To learn more about Next.js, take a look at the following resources:
+💅 TailwindCSS
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+🧠 GPT-Neo (backend)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+🧾 python-docx (for document generation)
 
-## Deploy on Vercel
+🔐 Clerk (authentication)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+📎 Google Colab (hosted backend)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+🧬 Signature AI model (CNN/Siamese - CEDAR Dataset)
+
+👨‍💻 Project Team
+Pulkit Malik – AI model development & backend integration
+
+Bilal Sadiq – Frontend developer & deployment
+
+Sanskar Sengar – Blockchain-based verification
+
+Ansh Sindhu – Dataset collection and preprocessing
+
+
+
+📌 Future Scope
+✅ Deploy all document models via Colab + Flask backend
+
+✅ Host chatbots via Hugging Face or Gradio
+
+⏳ Blockchain verification of document ownership
+
+⏳ Full signature detection pipeline integration
